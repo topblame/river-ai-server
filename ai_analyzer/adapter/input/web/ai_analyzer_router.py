@@ -15,5 +15,6 @@ async def analyze_financial_news(request: AnalyzeRequest):
         "sentiment": {
             "label": result.sentiment_label,
             "score": result.sentiment_score
-        }
+        },
+        "keywords": result.keywords
     }

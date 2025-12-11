@@ -7,3 +7,4 @@ class SentimentDetail(BaseModel):
 
 class AnalysisResponse(BaseModel):
     sentiment: SentimentDetail
+    keywords: List[str]
